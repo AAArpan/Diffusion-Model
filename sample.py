@@ -5,8 +5,8 @@ import yaml
 import os
 from torchvision.utils import make_grid
 from tqdm import tqdm
-from models.unet_base import Unet
-from scheduler.linear_noise_scheduler import LinearNoiseScheduler
+from Unet import Unet
+from NoiseScheduler import LinearNoiseScheduler
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
