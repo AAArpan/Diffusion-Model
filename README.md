@@ -9,4 +9,4 @@ For training and sampling
 ! python3 train.py --config /path to model_params file/
 ! python3 sample.py --config /path to model_params file/
 ```
-Use this [notebook]([TrainDemo.ipynb](https://github.com/AAArpan/Diffusion-Model/blob/main/Trainingdemo.ipynb)) to replicate the results and for direct sampling download the weights from [here](https://drive.google.com/file/d/1HPCfqnGULjmc8NRrveATN5MRmjCLXtZc/view?usp=sharing) 
+Use this [notebook](https://github.com/AAArpan/Diffusion-Model/blob/main/Trainingdemo.ipynb) to replicate the results and for direct sampling download the weights from [here](https://drive.google.com/file/d/1HPCfqnGULjmc8NRrveATN5MRmjCLXtZc/view?usp=sharing).
