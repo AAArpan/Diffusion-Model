@@ -25,8 +25,8 @@ def train(args):
     dataset_config = config['dataset_params']
     model_config = config['model_params']
     train_config = config['train_params']
-    img_size = config['im_size']
-    crop_size = config['crop_size']
+    img_size = model_config['im_size']
+    crop_size = model_config['crop_size']
     
     scheduler = LinearNoiseScheduler(num_timesteps=diffusion_config['num_timesteps'],
                                      beta_start=diffusion_config['beta_start'],
