@@ -10,13 +10,13 @@ from torch.utils.data.dataset import Dataset
 
 class CustomData(Dataset):
 
-    def __init__(self, split,im_path, im_ext='png'):
+    def __init__(self, split,im_path, img_size, crop_size, im_ext='png'):
 
         self.split = split
         self.im_ext = im_ext
         self.images = self.load_images(im_path)
-        self.crop_size = 178
-        self.img_size = 128
+        self.crop_size = crop_size
+        self.img_size = img_size
 
     
     def load_images(self, im_path):
@@ -42,5 +42,5 @@ class CustomData(Dataset):
         im_tensor = torchvision.transforms.ToTensor()(im)
         
         # Convert input to -1 to 1 range.
-        # im_tensor = (2 * im_tensor) - 1
+        im_tensor = (2 * im_tensor) - 1
         return im_tensor
