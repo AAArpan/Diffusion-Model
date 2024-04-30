@@ -7,8 +7,9 @@ diffusion_params:
   beta_end : 0.02
 
 model_params:
-  im_channels : 1
-  im_size : 28
+  im_channels : 3
+  im_size : 32
+  crop_size : 178
   down_channels : [32, 64, 128, 256]
   mid_channels : [256, 256, 128]
   down_sample : [True, True, False]
